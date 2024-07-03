@@ -6,39 +6,41 @@
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/007revad)
 [![committers.top badge](https://user-badge.committers.top/australia/007revad.svg)](https://user-badge.committers.top/australia/007revad)
 
-### Description
+### 描述
 
-Easily create an M.2 volume on Synology NAS without a lot of typing and no need for any how-to guides. And you ***don't*** need Synology branded NVMe drives.
+轻松在 Synology NAS 上创建 M.2 卷，无需大量输入，也无需任何操作指南。而且您不需要Synology 品牌的 NVMe 驱动器。
 
-This script creates the RAID and storage pool on your NVMe drive(s) so you can then create the volume in the Storage Manager.
+该脚本在您的 NVMe 驱动器上创建 RAID 和存储池，以便您可以在存储管理器中创建卷。
 
-All you have to do is run the script and type yes and 1, 2, 3 or 4 to answer some simple questions. Then go to Storage Manager and select Create Volume.
+您所要做的就是运行脚本并输入 yes 和 1、2、3 或 4 来回答一些简单的问题。然后转到存储管理器并选择创建卷。
 
-It also allows you to create a storage pool/volume spanning internal NVMe drives and NVMe drives in a Synology M.2 PCIe card.
+它还允许您创建跨内部 NVMe 驱动器和 Synology M.2 PCIe 卡中的 NVMe 驱动器的存储池/卷。
 
-For Xpenology users the script supports an unlimited number of NVMe drives (except for RAID 1 and Basic).
+对于 Xpenology 用户，该脚本支持无限数量的 NVMe 驱动器（RAID 1 和 Basic 除外）。
 
-**Supports DSM 7 and later** 
+**支持 DSM 7 及更高版本** 
 
 For [DSM 6 use v1](https://github.com/007revad/Synology_M2_volume/releases/tag/v1.3.25) and run **without** the auto update option.
+对于DSM 6，使用 v1并且在没有自动更新选项的情况下运行。
 
-**NEW in v2**
-- Now shows "M.2 Drive #" the same as storage manager.
-- Now uses synostgpool command which allows the following: (Thanks to Severe_Pea_2128 on reddit)
-  - Now supports JBOD, SHR, SHR2 and RAID F1.
-  - Added choice of multi-volume or single-volume storage pool. Multi-volume allows overprovisioning.
-  - Added option to skip drive check.
-  - No longer need to reboot after running the script.
-  - No longer need to do an online assemble.
-- Removed drive check progress as it was not possible with synostgpool.
-  - You can see the drive check progress in Storage Manager.
-- Removed dry run mode as it was not possible with synostgpool.
-- Removed support for SATA M.2 drives.
-  - If you have SATA M.2 drives [use v1](https://github.com/007revad/Synology_M2_volume/releases/tag/v1.3.25) and run **without** the auto update option.
+**v2 中的新功能**
+- 现在显示“M.2 驱动器#”，与存储管理器相同。
+现在使用 synostgpool 命令，它允许以下操作:(感谢 reddit 上的 Severe_Pea_2128）
+现在支持 JBOD、SHR、SHR2 和 RAID F1。
+增加了多卷或单卷存储池的选择。多卷允许超额配置。
+添加了跳过驱动器检查的选项。
+运行脚本后不再需要重新启动。
+不再需要进行在线组装。
+删除了驱动器检查进度，因为 synostgpool 无法实现此操作。
+您可以在存储管理器中查看驱动器检查进度。
+删除了空运行模式，因为 synostgpool 无法实现该模式。
+删除了对 SATA M.2 驱动器的支持。
+如果您有 SATA M.2 驱动器，请使用 v1并且在没有自动更新选项的情况下运行。
+https://github.com/007revad/Synology_M2_volume/releases/tag/v1.3.25
 
-### RAID levels supported
+###支持的 RAID 级别
 
-| RAID Level  | Min Drives Required  | Maximum Drives | Script version |
+| RAID 级别  | 所需最小硬盘数  | 最大硬盘数 | 脚本版本 |
 | ----------- |------------------|----------------|----------------|
 | SHR 1       | 1 or more drives | Unlimited      | v2 and later (DSM 7 only) |
 | SHR 2       | 4 or more drives | Unlimited      | v2 and later (DSM 7 only) |
@@ -51,7 +53,7 @@ For [DSM 6 use v1](https://github.com/007revad/Synology_M2_volume/releases/tag/v
 | RAID 10     | 4 or more drives | Unlimited      | v1.3.15 and later |
 | RAID F1     | 3 or more drives | Unlimited      | v2 and later (DSM 7 only) |
 
-If RAID F1 is selected the script enables RAID F1 on Synology models that don't officially support RAID F1.
+如果选择了 RAID F1，则脚本将在未正式支持 RAID F1 的 Synology 型号上启用 RAID F1。
 
 ### Confirmed working on
 
