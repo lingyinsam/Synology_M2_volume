@@ -65,12 +65,17 @@ https://github.com/007revad/Synology_M2_volume/releases/tag/v1.3.25
 | All          | DSM 6                    |           | [Use v1](https://github.com/007revad/Synology_M2_volume/releases/tag/v1.3.25) run without auto update option |
 | RS2423+      | DSM 7.2-64570 Update 1   |           |
 | DS1823xs+    | DSM 7.2-64561            | M2D20     |
+| DS923+       | DSM 7.2.2-72806 Update 3 |           |
+| DS923+       | DSM 7.2.2-72806 Update 2 |           |
+| DS923+       | DSM 7.2.2 72806 Update 1 |           |
 | DS923+       | DSM 7.2.1-69057 Update 5 |           |
 | DS923+       | DSM 7.2.1-69057 Update 2 |           |
 | DS923+       | DSM 7.1.1-42962 Update 5 |           |
+| DS723+       | DSM 7.2.2-72806 Update 2 |           |
 | DS723+       | DSM 7.2.1-69057 Update 3 |           |
 | DS723+       | DSM 7.2-64570 Update 1   |           |
 | DS723+       | DSM 7.1.1-42962 Update 4 |           |
+| DS423+       | DSM 7.2.2-72806          |           |
 | DS423+       | DSM 7.2.1-69057 Update 3 |           |
 | DS423+       | DSM 7.2-64570 Update 3   |           |
 | DS423+       | DSM 7.1.1-42962 Update 4 |           |
@@ -97,6 +102,7 @@ https://github.com/007revad/Synology_M2_volume/releases/tag/v1.3.25
 | DS1821+      | DSM 7.2-64216 Beta       |           |
 | DS1821+      | DSM 7.2-64213 Beta       |           |
 | DS1821+      | DSM 7.1.1-42962 Update 4 |           |
+| DS1621xs+    | DSM 7.2.1-69057 Update 5 |           |
 | DS1621+      | DSM 7.2-64570 Update 1   | E10M20-T1 | Also needs [Synology enable_M2_card](https://github.com/007revad/Synology_enable_M2_card) |
 | DS1621+      | DSM 7.2-64570 Update 1   |           |
 | DS1621+      | DSM 7.1.1-42962 Update 4 |           |
@@ -105,6 +111,10 @@ https://github.com/007revad/Synology_M2_volume/releases/tag/v1.3.25
 | DS1520+      | DSM 7.2.1-69057 Update 2 |           |
 | DS1520+      | DSM 7.2-64570 Update 1   |           |
 | DS1520+      | DSM 7.1.1-42962 Update 4 |           |
+| DS920+       | DSM 7.2.2 72806 Update 3 |           |
+| DS920+       | DSM 7.2.2 72806 Update 2 |           |
+| DS920+       | DSM 7.2.2 72806 Update 1 |           |
+| DS920+       | DSM 7.2.2-72806          |           |
 | DS920+       | DSM 7.2.1-69057 Update 5 |           |
 | DS920+       | DSM 7.2.1-69057 Update 4 |           |
 | DS920+       | DSM 7.2.1-69057 Update 3 |           |
@@ -115,8 +125,14 @@ https://github.com/007revad/Synology_M2_volume/releases/tag/v1.3.25
 | DS920+       | DSM 7.2-64561            |           |
 | DS920+       | DSM 7.2-64216 Beta       |           |
 | DS920+       | DSM 7.1.1-42962 Update 1 |           |
+| RS1619xs+    | DSM 7.2.2-72806 Update 3 |           |
 | DS918+       | DSM 7.2-64570 Update 3   |           |
 | RS820+       | DSM 7.2-64570 Update 3   | M2D20     |
+| DS720+       | DSM 7.2.2 72806 Update 3 |           |
+| DS720+       | DSM 7.2.2 72806 Update 2 |           |
+| DS720+       | DSM 7.2.2 72806 Update 1 |           |
+| DS720+       | DSM 7.2.2-72806          |           |
+| DS720+       | DSM 7.2.1-69057 Update 5 |           |
 | DS720+       | DSM 7.2.1-69057 Update 4 |           |
 | DS720+       | DSM 7.2.1-69057 Update 3 |           |
 | DS720+       | DSM 7.2.1-69057 Update 2 |           |
@@ -130,6 +146,7 @@ https://github.com/007revad/Synology_M2_volume/releases/tag/v1.3.25
 | DS420+       | DSM 7.2-64570 Update 1   |           |
 | DS1819+      | DSM 7.2-64216 Beta       | M2D20     |
 | DS1819+      | DSM 7.1.1                | M2D20     |
+| DS1019+      | DSM 7.2.2-72806          |           |
 | DS1019+      | DSM 7.2.1-69057 Update 2 |           |
 | DS1019+      | DSM 7.2-64561            |           |
 | DS1019+      | DSM 7.1.1-42962 Update 4 |           |
@@ -196,8 +213,8 @@ If the script won't run check the following:
     - Confirm your settings and click Apply to finish creating your M.2 volume.
 4. Optionally enable and schedule TRIM:
     - Storage Pool > ... > Settings > SSD TRIM    
+    - **Note: DSM 7.2 and later has no SSD TRIM setting for M.2 RAID 0**
     - **Note: DSM 7.1.1. has no SSD TRIM setting for M.2 storage pools**
-    - **Note: DSM 7.2 Beta has no SSD TRIM setting for M.2 RAID 0 or RAID 5**
 
 -----
 ### How to repair a NVMe storage pool or upgrade to larger drives
